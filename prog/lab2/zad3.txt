@@ -1,0 +1,11 @@
+    char (*r)[];
+        To deklaracja wskaźnika do tablicy znaków. Jednakże, bez określenia rozmiaru tablicy, deklaracja ta jest niepełna.
+
+    char *r[10];
+        Jest to deklaracja tablicy 10 wskaźników do charakterów. Każdy wskaźnik w tablicy może wskazywać na łańcuch znaków.
+
+    char q(char *);
+        Jest to deklaracja funkcji o nazwie q, która przyjmuje wskaźnik do charakteru jako argument i zwraca wartość charakteru.
+
+    char (*q)(char[]);
+        Jest to deklaracja wskaźnika do funkcji, która przyjmuje tablicę znaków jako argument. Jednakże, tak jak w C, tablica zostanie automatycznie przekształcona w wskaźnik, więc deklaracja ta jest równoważna char (*q)(char*);.
